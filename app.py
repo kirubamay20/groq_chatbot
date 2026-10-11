@@ -20,7 +20,7 @@ SYSTEM_PROMPT = (
 
 def chat_fn(message, history):
 
-    api_key = "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" #os.getenv("GROQ_API_KEY")
+    api_key = os.getenv("GROQ_API_KEY")
 
     if not api_key:
         return (
